@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "public": "ssr-react-rendering",
+    "default": "ssr-react-rendering",
+    "ssr": "ss-r-f7e4a"
+  }
+}

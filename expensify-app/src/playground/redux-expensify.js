@@ -178,6 +178,7 @@ store.subscribe(() => {
   const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
 
   console.log(visibleExpenses)
+  // console.log(state)
 })
 
 const expenseOne = store.dispatch(addExpense({ description: 'Rent', amount: 100, createdAt: -21000 }));
