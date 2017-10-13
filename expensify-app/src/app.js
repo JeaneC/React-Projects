@@ -13,8 +13,9 @@ import 'normalize.css/normalize.css'
 const store = configureStore(); //This returns the store
 
 store.dispatch(addExpense({ description: 'Water Bill', amount: 4500 }))
-store.dispatch(addExpense({ description: 'Gas Bill' }))
-store.dispatch(setTextFilter('water'))
+store.dispatch(addExpense({ description: 'Gas Bill' , createdAt: 1000 }))
+store.dispatch(addExpense({ description: 'Rent', amount: 104500 }))
+// store.dispatch(setTextFilter('bill'))
 
 const state = store.getState()
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
