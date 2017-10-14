@@ -11,6 +11,9 @@ import './styles/styles.scss';
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
 
+import './firebase/firebase'
+
+
 const store = configureStore(); //This returns the store
 
 store.dispatch(addExpense({ description: 'Water Bill', amount: 4500 }))
